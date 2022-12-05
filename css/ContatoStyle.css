@@ -1,0 +1,156 @@
+*{
+    display: flexbox;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+}
+
+.logo{
+    font-size: 2.2rem;
+}
+
+.logo span{
+    color: red;
+}
+
+
+.navbar{
+    width: 100%;
+    background: #111;
+    color: #eee;
+    height: 80px;
+}
+
+#navbar-container{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+#navbar-items li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #eee;
+    text-transform: uppercase;
+}
+
+.navbar li a:hover{
+        cursor: pointer;
+        color: red;
+        transition: 0.5s;
+        background: #333;
+        border-radius: 15px;
+    }
+
+#showcase {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('/img/back-contato.jpg') no-repeat center center/cover;
+/* overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+#showcase-container{
+    text-align: center;
+}
+#showcase-container h2{
+    font-size: 2.2rem;
+}
+
+.local{
+    background: #eee;
+}
+
+.localizacao{
+    display: flex;
+}
+
+#map{
+    width: 700px;
+}
+
+.info{
+    width:100%;
+    align-items: center;
+    text-align: center;
+    background: rgb(102, 102, 102);
+    color: #eee;
+}
+
+#info-container{
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+#info-container p{
+    margin: 10px;
+    text-align: left;
+}
+
+#info-container h3{
+    font-size: 1.5rem;
+}
+
+.img-info{
+    height: 25px;
+}
+
+.resumo{
+    background: #eee;
+    padding: 10px;
+}
+
+.resumo h3{
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+} 
+
+.resumo p{
+    margin: 20px;
+}
+
+
+#footer{
+    height: auto;
+    width: auto;
+    background: #111;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+.localizacao{
+    display: grid;
+    width: 100%;
+}
+
+#map{
+    width: 100%;
+}
+
+#info-container{
+    width: 89%;
+
+}
+    
+}
