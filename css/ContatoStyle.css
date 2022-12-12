@@ -49,7 +49,6 @@ body{
 
 .navbar li a:hover{
         cursor: pointer;
-        color: red;
         transition: 0.5s;
         background: #333;
         border-radius: 15px;
@@ -83,11 +82,12 @@ body{
 }
 
 #map{
-    width: 700px;
+    width: 100%;
 }
 
 .info{
     width:100%;
+    height: auto;
     align-items: center;
     text-align: center;
     background: rgb(102, 102, 102);
@@ -95,7 +95,7 @@ body{
 }
 
 #info-container{
-    padding: 20px;
+    padding: 30px;
     text-transform: uppercase;
 }
 
@@ -114,7 +114,7 @@ body{
 
 .resumo{
     background: #eee;
-    padding: 10px;
+    padding: 20px;
 }
 
 .resumo h3{
@@ -137,7 +137,18 @@ body{
     text-align: center;
 }
 
-@media (max-width: 768px) {
+/* ----------------------------mobile----------------------------------- */
+
+@media (max-width: 846px) {
+
+    .navbar{
+        height: 180px;
+    }
+
+    #navbar-container{
+        display: grid;
+        justify-content: center;
+    }
 
 .localizacao{
     display: grid;
@@ -145,11 +156,13 @@ body{
 }
 
 #map{
-    width: 100%;
+    width: 350px;
+    display: flex;
+    place-items: center;
 }
 
 #info-container{
-    width: 89%;
+    width: auto;
 
 }
     
