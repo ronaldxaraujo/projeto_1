@@ -58,6 +58,11 @@ body{
     padding: 50px;
     text-align: center;
 }
+
+.sobre-energia img {
+    display: flex;
+    justify-content: center;
+}
 .sobre-energia h1{
     text-transform: uppercase;
     padding: 15px;
@@ -72,18 +77,17 @@ body{
 
 
 #img-energia1{
-    display: grid;
+    display: flex;
     width: 100%;
     height: auto;
-    place-items: center;
+    justify-content: center;
 }
 
 #img-energia2{
-    display: grid;
-    width: auto;
-    height: 400pxs;
-    place-items: center;
-}
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;}
 
 #img-planta{
     display: flex;
@@ -122,15 +126,13 @@ body{
     }
 
     #img-energia1{
-        height: 250px;
-        width: 100%;
-        justify-content: center;
+    height: 250px;
+    width: 100%;
     }
 
     #img-energia2{
-        height: 250px;
-        width: 100%;
-        justify-content: center;
+    height: 250px;
+    width: 100%;
     }
 #img-planta{
     height: 250px;

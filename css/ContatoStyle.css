@@ -81,6 +81,10 @@ body{
     display: flex;
 }
 
+iframe{
+    width: 100%;
+}
+
 #map{
     width: 100%;
 }
@@ -90,7 +94,7 @@ body{
     height: auto;
     align-items: center;
     text-align: center;
-    background: rgb(102, 102, 102);
+    background: rgb(121, 121, 121);
     color: #eee;
 }
 
